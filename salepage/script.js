@@ -55,80 +55,12 @@ const bangkokData = {
 
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', () => {
-    normalizeLocalAssets();
     createStars();
     handleScrollReveal();
     populateDistricts();
     startCountdown();
     animateCounters();
 });
-
-function normalizeLocalAssets() {
-    document.querySelectorAll('img').forEach((img) => {
-        const src = img.getAttribute('src') || '';
-        if (src.startsWith('file:///')) {
-            img.src = buildFallbackImage(img.alt || 'Yum Yai Tue');
-            img.dataset.generatedFallback = 'true';
-        }
-
-        img.addEventListener('error', () => {
-            if (img.dataset.generatedFallback === 'true') return;
-            img.src = buildFallbackImage(img.alt || 'Yum Yai Tue');
-            img.dataset.generatedFallback = 'true';
-        }, { once: true });
-    });
-}
-
-function buildFallbackImage(label) {
-    const palette = getPlaceholderPalette(label);
-    const safeLabel = escapeSvgText(label);
-    const svg = `
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="${safeLabel}">
-            <defs>
-                <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="${palette[0]}"/>
-                    <stop offset="100%" stop-color="${palette[1]}"/>
-                </linearGradient>
-                <radialGradient id="glow" cx="50%" cy="35%" r="55%">
-                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
-                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-                </radialGradient>
-            </defs>
-            <rect width="800" height="600" rx="36" fill="url(#bg)"/>
-            <circle cx="620" cy="110" r="90" fill="#ffffff" fill-opacity="0.12"/>
-            <circle cx="170" cy="470" r="140" fill="#ffd700" fill-opacity="0.12"/>
-            <ellipse cx="400" cy="300" rx="240" ry="200" fill="url(#glow)"/>
-            <path d="M310 220c18-34 60-58 110-58 66 0 120 42 120 94 0 13-3 26-9 38 37 21 61 53 61 89 0 66-79 119-176 119S240 449 240 383c0-37 24-69 61-90-6-12-9-24-9-37 0-13 2-25 18-36z" fill="#1b0c33" fill-opacity="0.58" stroke="#ffffff" stroke-opacity="0.22" stroke-width="8"/>
-            <path d="M358 274c12 28 34 50 62 64 34 17 74 21 110 12-19 31-58 53-104 53-65 0-120-44-132-104 20-17 44-28 64-25z" fill="#ffffff" fill-opacity="0.2"/>
-            <text x="50%" y="82%" text-anchor="middle" fill="#ffffff" font-size="46" font-family="'Mitr', Arial, sans-serif" font-weight="700">${safeLabel}</text>
-            <text x="50%" y="90%" text-anchor="middle" fill="#ffffff" fill-opacity="0.85" font-size="22" font-family="'Mitr', Arial, sans-serif">Netlify-ready visual placeholder</text>
-        </svg>
-    `;
-
-    return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
-
-function getPlaceholderPalette(label) {
-    const palettes = [
-        ['#35014f', '#ff5f6d'],
-        ['#2b124c', '#c7522a'],
-        ['#3a0ca3', '#f72585'],
-        ['#0f4c5c', '#e36414'],
-        ['#293241', '#ee6c4d'],
-        ['#264653', '#e9c46a']
-    ];
-    const index = [...label].reduce((sum, char) => sum + char.charCodeAt(0), 0) % palettes.length;
-    return palettes[index];
-}
-
-function escapeSvgText(value) {
-    return value
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-}
 
 // ===== Stars =====
 function createStars() {
