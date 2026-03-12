@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ยำยายตือ | ยำแซ่บสายมู สูตรลับแม่มด</title>
+    <meta name="description" content="ยำยายตือ - ยำรสเด็ดปรุงด้วยมนตราพิถีพิถัน ธีมแม่มดสีม่วง สั่งเลยวันนี้!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Sticky Navbar -->
+    <nav class="sticky-nav" id="stickyNav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">🔮 ยำยายตือ</a>
+            <div class="nav-links">
+                <a href="#menu">เมนู</a>
+                <a href="#toppings">ท็อปปิ้ง</a>
+                <a href="#upsell">โปรโมชั่น</a>
+                <a href="#faq">FAQ</a>
+                <a href="#menu" class="nav-cta">สั่งเลย!</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Cart Badge -->
+    <div class="floating-cart" id="floatingCart">
+        <i class="fas fa-hat-wizard"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Floating Line OA Button -->
+    <a href="https://line.me/ti/p/~@yumyaitue" target="_blank" class="floating-line" title="แชทกับเราทาง Line">
+        <i class="fab fa-line"></i>
+    </a>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="glass-card hero-content">
+            <div class="badge-tag">🔮 สูตรลับจากยายตือ</div>
+            <h2 class="sub-headline">ศาสตร์ลับแห่งความแซ่บ... ที่ถูกสะกดไว้</h2>
+            <h1 class="main-headline">ยำยายตือ <span class="magic-text">Yum Yai Tue</span></h1>
+            <p class="description">ยำรสเด็ดที่ปรุงด้วยมนตราพิถีพิถัน ทุกจานมี 'จิตวิญญาณ' และ 'ความมงคล'</p>
+            <a href="#menu" class="cta-button pulse">สำรวจมนตราความแซ่บ <i class="fas fa-hat-wizard"></i></a>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num" data-target="9364">0</span><span class="stat-label">ออเดอร์</span></div>
+                <div class="stat"><span class="stat-num" data-target="4.9" data-decimal="true">0</span><span class="stat-label">⭐ รีวิว</span></div>
+                <div class="stat"><span class="stat-num" data-target="100" data-suffix="%">0</span><span class="stat-label">สดใหม่</span></div>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/hero_salad_cauldron_1773306028615.png" alt="Yum Yai Tue Hero" class="floating">
+        </div>
+    </section>
+
+    <!-- Urgency Countdown Timer -->
+    <section class="countdown-bar">
+        <div class="container">
+            <div class="countdown-inner">
+                <span class="countdown-text">🔥 โปรโมชั่นนี้เหลือเวลาอีก</span>
+                <div class="countdown-timer">
+                    <div class="time-box"><span id="hours">00</span><small>ชม.</small></div>
+                    <div class="time-sep">:</div>
+                    <div class="time-box"><span id="minutes">00</span><small>นาที</small></div>
+                    <div class="time-sep">:</div>
+                    <div class="time-box"><span id="seconds">00</span><small>วินาที</small></div>
+                </div>
+                <span class="countdown-text">เท่านั้น! 🎁 รับฟรีท็อปปิ้งมุกนำโชค</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. The Curse (Problem Statement) -->
+    <section class="problem-section content-padding">
+        <div class="container text-center">
+            <h2 class="section-title">เบื่อไหม? กับยำรสชาติเดิมๆ ที่ไม่มีชีวิตชีวา</h2>
+            <div class="problem-grid">
+                <div class="problem-item glass-card">
+                    <i class="fas fa-skull"></i>
+                    <h3>รสชาติจืดชืด</h3>
+                    <p>กินเท่าไหร่ก็ไม่สะใจ ไม่มีความแปลกใหม่ให้ลิ้นได้ตื่นเต้น</p>
+                </div>
+                <div class="problem-item glass-card">
+                    <i class="fas fa-cloud-rain"></i>
+                    <h3>วันแย่ๆ ที่ต้องการการเยียวยา</h3>
+                    <p>เหนื่อยจากงาน เครียดจากเรียน ต้องการอะไรที่กระแทกใจและเสริมพลัง</p>
+                </div>
+                <div class="problem-item glass-card">
+                    <i class="fas fa-ghost"></i>
+                    <h3>ความไม่มั่นใจ</h3>
+                    <p>อยากกินของอร่อย แต่ก็อยากได้สิริมงคลไปพร้อมกัน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. The Elixir (Solution) -->
+    <section class="solution-section content-padding">
+        <div class="container">
+            <div class="solution-content">
+                <div class="text-side">
+                    <h2 class="section-title text-left">พบกับ "ยาเสน่ห์" แห่งความอร่อย</h2>
+                    <p>ที่ <strong>ยำยายตือ</strong> เราไม่ได้แค่ทำยำ แต่เรา "ปรุงมนตรา" ด้วยวัตถุดิบที่คัดสรรมาอย่างวิเศษ ผสมผสานรสชาติเปรี้ยว เผ็ด เค็ม หวาน อย่างลงตัวที่สุด พร้อมพลังงานบวกที่คุณจะรู้สึกได้ตั้งแต่คำแรก</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> ปลุกเสกความสดด้วยซีฟู้ดพรีเมียม</li>
+                        <li><i class="fas fa-check-circle"></i> น้ำยำสูตรลับแม่มดตือเคี่ยวนานกว่า 9 ชั่วโมง</li>
+                        <li><i class="fas fa-check-circle"></i> ปรุงตามพื้นดวง (เลือกความเผ็ดตามราศี)</li>
+                    </ul>
+                </div>
+                <div class="image-side">
+                    <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_item_purple_mist_1773306057301.png" alt="Purple Mist Salad" class="glow-border">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Magical Benefits -->
+    <section class="benefits-section content-padding">
+        <div class="container">
+            <h2 class="section-title text-center">มนตรา 3 ประการของยายตือ</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon-box"><i class="fas fa-eye"></i></div>
+                    <h3>สายตาเป็นประกาย</h3>
+                    <p>ด้วยสมุนไพรสดและวิตามินซีจากมะนาวแท้ 100%</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-box"><i class="fas fa-heart"></i></div>
+                    <h3>อิ่มเอมหัวใจ</h3>
+                    <p>รสชาติที่ปลดล็อคความสุข (Endorphin Boost)</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon-box"><i class="fas fa-star"></i></div>
+                    <h3>เสริมดวงชะตา</h3>
+                    <p>ท็อปปิ้งมงคล เลือกได้ตามวันที่เกิด</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Testimonials (Proof) -->
+    <section class="testimonials content-padding">
+        <div class="container">
+            <h2 class="section-title text-center">เหล่าสาวกที่ถูก "สะกด"</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item glass-card">
+                    <div class="stars-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"ตอนแรกก็เฉยๆ พอได้กิน ยำพระจันทร์แดง เข้าไปเท่านั้นแหละ เหมือนโดนมนต์สะกด กินหยุดไม่ได้เลยค่ะ!"</p>
+                    <div class="user-info">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=Pim" alt="User">
+                        <span>น้องพิมพ์ (นักศึกษาปี 3)</span>
+                    </div>
+                </div>
+                <div class="testimonial-item glass-card">
+                    <div class="stars-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"สีสันสวยงามมาก ถ่ายรูปลง IG คือปังสุด รสชาติก็แซ่บถึงใจจริงๆ ครับ"</p>
+                    <div class="user-info">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=Max" alt="User">
+                        <span>คุณแม็กซ์ (Content Creator)</span>
+                    </div>
+                </div>
+                <div class="testimonial-item glass-card">
+                    <div class="stars-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"สั่งเซ็ตวิเศษ The Grand Coven Feast ทั้งครอบครัว อร่อยทุกจาน ลูกๆ ชอบธีมแม่มดมาก ถ่ายรูปรัวเลยค่า"</p>
+                    <div class="user-info">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=Jane" alt="User">
+                        <span>คุณเจน (แม่บ้านสายมู)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item"><i class="fas fa-shield-alt"></i><span>วัตถุดิบปลอดภัย 100%</span></div>
+                <div class="trust-item"><i class="fas fa-leaf"></i><span>สด ใหม่ ทุกวัน</span></div>
+                <div class="trust-item"><i class="fas fa-truck"></i><span>ส่งไว 30-45 นาที</span></div>
+                <div class="trust-item"><i class="fas fa-undo"></i><span>ไม่อร่อย ยินดีคืนเงิน</span></div>
+                <div class="trust-item"><i class="fas fa-award"></i><span>ยอดขาย 9,000+ จาน</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Our Cauldron Menu (9 Products) -->
+    <section id="menu" class="menu-section content-padding">
+        <div class="container">
+            <h2 class="section-title text-center">โถปรุงยาของยายตือ (เมนูแนะนำ)</h2>
+            <div class="menu-grid">
+                <!-- 1. ยำพระจันทร์แดง -->
+                <div class="menu-card glass-card">
+                    <div class="menu-badge">🔥 ขายดี!</div>
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_item_red_moon_1773306043908.png" alt="Red Moon">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำพระจันทร์แดง <span class="eng-name">(Red Moon)</span></h3>
+                        <p>ยำซีฟู้ดผสานเบอร์รี่สด ให้รสเปรี้ยวหวานบาดลึก</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️🌶️</div>
+                        <span class="price">159.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำพระจันทร์แดง', 159)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 2. ยำหมอกม่วง -->
+                <div class="menu-card glass-card">
+                    <div class="menu-badge new-badge">✨ ใหม่!</div>
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_item_purple_mist_1773306057301.png" alt="Purple Mist">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำหมอกม่วง <span class="eng-name">(Purple Mist)</span></h3>
+                        <p>ยำวุ้นเส้นอัญชัน นุ่มละมุนและรสสัมผัสซับซ้อน</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️</div>
+                        <span class="price">129.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำหมอกม่วง', 129)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 3. ยำคาถาทะเล -->
+                <div class="menu-card glass-card">
+                    <div class="menu-badge premium-badge">👑 พรีเมียม</div>
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_seafood_spell_1773311058408.png" alt="Seafood Spell">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำคาถาทะเล <span class="eng-name">(Seafood Spell)</span></h3>
+                        <p>ยำซีฟู้ดรวม กุ้ง หมึก หอยแมลงภู่ น้ำยำเข้มข้น</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️🌶️🌶️</div>
+                        <span class="price">179.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำคาถาทะเล', 179)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 4. ยำวุ้นเส้นต้มยำ -->
+                <div class="menu-card glass-card">
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_glass_noodle_1773311075328.png" alt="Enchanted Noodle">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำวุ้นเส้นต้มยำ <span class="eng-name">(Enchanted Noodle)</span></h3>
+                        <p>ยำวุ้นเส้นหมูสับสูตรต้มยำ เปรี้ยวจี๊ดเผ็ดร้อน</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️🌶️</div>
+                        <span class="price">99.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำวุ้นเส้นต้มยำ', 99)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 5. ยำมะม่วงเวทมนตร์ -->
+                <div class="menu-card glass-card">
+                    <div class="menu-badge">🥭 ซิกเนเจอร์</div>
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_mango_sorcery_1773313107909.png" alt="Mango Sorcery">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำมะม่วงเวทมนตร์ <span class="eng-name">(Mango Sorcery)</span></h3>
+                        <p>ยำมะม่วงดิบกับกุ้งสดและเม็ดมะม่วงหิมพานต์</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️🌶️</div>
+                        <span class="price">139.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำมะม่วงเวทมนตร์', 139)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 6. ยำไข่เค็มลาวา -->
+                <div class="menu-card glass-card">
+                    <div class="menu-badge new-badge">🌟 แนะนำ!</div>
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_lava_egg_1773313125346.png" alt="Lava Egg">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำไข่เค็มลาวา <span class="eng-name">(Lava Egg Hex)</span></h3>
+                        <p>ยำปลากรอบราดซอสไข่เค็มลาวาเข้มข้นสีทอง</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️</div>
+                        <span class="price">149.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำไข่เค็มลาวา', 149)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 7. ยำแซลมอนมนต์ดำ -->
+                <div class="menu-card glass-card">
+                    <div class="menu-badge premium-badge">👑 พรีเมียม</div>
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_dark_salmon_1773313143512.png" alt="Dark Salmon">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำแซลมอนมนต์ดำ <span class="eng-name">(Dark Salmon Spell)</span></h3>
+                        <p>ยำแซลมอนสดชิ้นหนา น้ำยำสูตรวาซาบิเผ็ดซ่า</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️🌶️🌶️</div>
+                        <span class="price">199.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำแซลมอนมนต์ดำ', 199)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 8. ยำเห็ดป่าอาถรรพ์ -->
+                <div class="menu-card glass-card">
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_mushroom_forest_1773313164262.png" alt="Mushroom Forest">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำเห็ดป่าอาถรรพ์ <span class="eng-name">(Cursed Forest)</span></h3>
+                        <p>ยำเห็ดรวม 5 ชนิด (ชิเมจิ เข็มทอง นางฟ้า หอม เห็ดฟาง)</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️</div>
+                        <span class="price">119.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำเห็ดป่าอาถรรพ์', 119)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+                <!-- 9. ยำปูนิ่มราชินีมด -->
+                <div class="menu-card glass-card">
+                    <div class="menu-badge premium-badge">💎 Limited</div>
+                    <div class="menu-img-wrap">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/menu_softshell_crab_1773313181576.png" alt="Soft Shell Crab">
+                    </div>
+                    <div class="menu-info">
+                        <h3>ยำปูนิ่มราชินีมด <span class="eng-name">(Witch Queen Crab)</span></h3>
+                        <p>ยำปูนิ่มทอดกรอบ ราดน้ำยำซีฟู้ดรสจัดจ้าน</p>
+                        <div class="spice-level">ความเผ็ด: 🌶️🌶️🌶️🌶️🌶️</div>
+                        <span class="price">219.-</span>
+                        <button class="add-to-cart" onclick="addToCart('ยำปูนิ่มราชินีมด', 219)">🔮 ร่ายมนตราใส่ตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Topping Add-on (12 Lucky Toppings) -->
+    <section id="toppings" class="toppings-section content-padding">
+        <div class="container">
+            <h2 class="section-title text-center">🌟 ท็อปปิ้งเสริมดวง (Lucky Toppings)</h2>
+            <p class="text-center" style="margin-bottom:30px; opacity:0.8">เลือกท็อปปิ้งมงคลตามวันเกิดเพื่อเสริมโชคลาภ!</p>
+            <div class="toppings-grid">
+                <div class="topping-item" onclick="addToCart('ไข่ลวกมหาเฮง (ไข่ต้มยางมะตูม)', 15)">
+                    <span class="topping-emoji">🥚</span>
+                    <span class="topping-name">ไข่ลวกมหาเฮง</span>
+                    <span class="topping-desc">ไข่ต้มยางมะตูม</span>
+                    <span class="topping-price">+15.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('มุกนำโชค (ไข่กุ้งส้ม)', 20)">
+                    <span class="topping-emoji">🔮</span>
+                    <span class="topping-name">มุกนำโชค</span>
+                    <span class="topping-desc">ไข่กุ้งส้ม Tobiko</span>
+                    <span class="topping-price">+20.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('กุ้งเสริมบารมี (กุ้งสดตัวใหญ่ x3)', 35)">
+                    <span class="topping-emoji">🦐</span>
+                    <span class="topping-name">กุ้งเสริมบารมี</span>
+                    <span class="topping-desc">กุ้งสดตัวใหญ่ x3</span>
+                    <span class="topping-price">+35.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('หมูกรอบเรียกทรัพย์ (หมูกรอบทอดกระเทียม)', 25)">
+                    <span class="topping-emoji">🥓</span>
+                    <span class="topping-name">หมูกรอบเรียกทรัพย์</span>
+                    <span class="topping-desc">หมูกรอบทอดกระเทียม</span>
+                    <span class="topping-price">+25.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('ถั่วลิสงแห่งปัญญา (ถั่วลิสงคั่วโรยหน้า)', 10)">
+                    <span class="topping-emoji">🥜</span>
+                    <span class="topping-name">ถั่วลิสงแห่งปัญญา</span>
+                    <span class="topping-desc">ถั่วลิสงคั่วโรยหน้า</span>
+                    <span class="topping-price">+10.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('น้ำยำดำมืด (น้ำยำซีฟู้ดเข้มข้นพิเศษ)', 10)">
+                    <span class="topping-emoji">🧪</span>
+                    <span class="topping-name">น้ำยำดำมืด</span>
+                    <span class="topping-desc">น้ำยำซีฟู้ดเข้มข้นพิเศษ</span>
+                    <span class="topping-price">+10.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('ไข่เค็มสีทอง (ไข่เค็มทอดกรอบ)', 25)">
+                    <span class="topping-emoji">🥇</span>
+                    <span class="topping-name">ไข่เค็มสีทอง</span>
+                    <span class="topping-desc">ไข่เค็มทอดกรอบ</span>
+                    <span class="topping-price">+25.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('แซลมอนสดเสริมออร่า (แซลมอนสดสไลซ์)', 45)">
+                    <span class="topping-emoji">🐟</span>
+                    <span class="topping-name">แซลมอนสดเสริมออร่า</span>
+                    <span class="topping-desc">แซลมอนสดสไลซ์</span>
+                    <span class="topping-price">+45.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('ปลาหมึกกรอบสะกดจิต (หมึกทอดกรอบ)', 30)">
+                    <span class="topping-emoji">🦑</span>
+                    <span class="topping-name">ปลาหมึกกรอบสะกดจิต</span>
+                    <span class="topping-desc">หมึกทอดกรอบ</span>
+                    <span class="topping-price">+30.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('วุ้นเส้นอัญชัน (เส้นแก้วมังกรสีม่วง)', 15)">
+                    <span class="topping-emoji">💜</span>
+                    <span class="topping-name">วุ้นเส้นอัญชัน</span>
+                    <span class="topping-desc">เส้นแก้วมังกรสีม่วง</span>
+                    <span class="topping-price">+15.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('เห็ดหอมย่างเรียกคู่ (เห็ดหอมญี่ปุ่นย่าง)', 30)">
+                    <span class="topping-emoji">🍄</span>
+                    <span class="topping-name">เห็ดหอมย่างเรียกคู่</span>
+                    <span class="topping-desc">เห็ดหอมญี่ปุ่นย่าง</span>
+                    <span class="topping-price">+30.-</span>
+                </div>
+                <div class="topping-item" onclick="addToCart('พริกแห้งจากนรก (พริกแห้งทอดกรอบ)', 10)">
+                    <span class="topping-emoji">🔥</span>
+                    <span class="topping-name">พริกแห้งจากนรก</span>
+                    <span class="topping-desc">พริกแห้งทอดกรอบ</span>
+                    <span class="topping-price">+10.-</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Up-sell Section (The Grand Coven Feast) -->
+    <section id="upsell" class="upsell-section content-padding">
+        <div class="container">
+            <div class="upsell-box glass-card">
+                <div class="upsell-content">
+                    <div class="upsell-text">
+                        <span class="tag">🏆 Recommended!</span>
+                        <h2>ยกระดับพลังความแซ่บ!</h2>
+                        <p>รับ <strong>"The Grand Coven Feast"</strong> (เซ็ตวิเศษรวมเทพ) พร้อมเครื่องดื่ม "น้ำอมฤตเลมอน" ในราคาพิเศษเพียง <strong>299.-</strong> <s>จากปกติ 380.-</s></p>
+                        <ul class="upsell-features">
+                            <li><i class="fas fa-magic"></i> รวมยำ 2 ชนิดที่คุณเลือก</li>
+                            <li><i class="fas fa-gem"></i> ฟรี! ท็อปปิ้ง "มุกนำโชค"</li>
+                            <li><i class="fas fa-glass-whiskey"></i> เครื่องดื่มเสริมพลัง 1 แก้ว</li>
+                        </ul>
+                        <button class="cta-button" onclick="addToCart('The Grand Coven Feast', 299)">รับเซ็ตวิเศษนี้เลย! 🔥</button>
+                    </div>
+                    <div class="upsell-image">
+                        <img src="file:///C:/Users/User/.gemini/antigravity/brain/676cf8e6-2fcf-42ef-8a14-3587c28008e9/magical_combo_upsell_1773306075383.png" alt="Combo Set">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Spice Level Selector -->
+    <section class="spice-selector content-padding">
+        <div class="container text-center">
+            <h2 class="section-title">เลือกระดับภัยพิบัติความเผ็ด</h2>
+            <div class="spice-buttons">
+                <button class="spice-btn" onclick="selectSpice(this, 'ลมพัดผ่าน 🍃')">🍃<br>ลมพัดผ่าน</button>
+                <button class="spice-btn" onclick="selectSpice(this, 'พายุเริ่มก่อตัว 🌪️')">🌪️<br>พายุเริ่มก่อตัว</button>
+                <button class="spice-btn active" onclick="selectSpice(this, 'สายฟ้าฟาด ⚡')">⚡<br>สายฟ้าฟาด</button>
+                <button class="spice-btn" onclick="selectSpice(this, 'ลาวาภูเขาไฟ 🌋')">🌋<br>ลาวาภูเขาไฟ</button>
+                <button class="spice-btn" onclick="selectSpice(this, 'นรกแตก 💀')">💀<br>นรกแตก</button>
+            </div>
+            <p class="spice-result" id="spiceResult">ระดับปัจจุบัน: <strong>สายฟ้าฟาด ⚡</strong></p>
+        </div>
+    </section>
+
+    <!-- 10. FAQ -->
+    <section id="faq" class="faq-section content-padding">
+        <div class="container">
+            <h2 class="section-title text-center">คำถามพบบ่อยจากลูกศิษย์</h2>
+            <div class="faq-grid">
+                <div class="faq-item glass-card" onclick="toggleFaq(this)">
+                    <h4><i class="fas fa-chevron-right faq-arrow"></i> ยำยายตือเผ็ดมากไหม?</h4>
+                    <p class="faq-answer">พริกของเราคัดเกรดพิเศษ คุณสามารถเลือกระดับภัยพิบัติได้ตั้งแต่ "ลมพัดผ่าน" ไปจนถึง "นรกแตก" ตามที่ลิ้นของคุณจะรับไหว!</p>
+                </div>
+                <div class="faq-item glass-card" onclick="toggleFaq(this)">
+                    <h4><i class="fas fa-chevron-right faq-arrow"></i> สั่งแล้วรอนานไหม?</h4>
+                    <p class="faq-answer">แม่มดของเราใช้กวาดความเร็วสูงในการจัดส่ง (ผ่าน Partner) ถึงมือคุณใน 30-45 นาที</p>
+                </div>
+                <div class="faq-item glass-card" onclick="toggleFaq(this)">
+                    <h4><i class="fas fa-chevron-right faq-arrow"></i> มีเมนูสำหรับคนไม่กินเผ็ดไหม?</h4>
+                    <p class="faq-answer">มีค่ะ! "ยำหมอกม่วง" และ "ยำเห็ดป่าอาถรรพ์" สามารถปรับเป็นเผ็ดน้อยหรือไม่เผ็ดเลยได้ค่ะ</p>
+                </div>
+                <div class="faq-item glass-card" onclick="toggleFaq(this)">
+                    <h4><i class="fas fa-chevron-right faq-arrow"></i> รับชำระเงินอย่างไร?</h4>
+                    <p class="faq-answer">รับชำระผ่าน QR Code PromptPay (สแกนจ่ายได้ทุกธนาคาร) หรือเก็บเงินปลายทาง (COD) ค่ะ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Info Section -->
+    <section class="delivery-section content-padding">
+        <div class="container">
+            <h2 class="section-title text-center">🚚 ข้อมูลการจัดส่ง</h2>
+            <div class="delivery-grid">
+                <div class="delivery-card glass-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>พื้นที่จัดส่ง</h4>
+                    <p>ส่งทั่วกรุงเทพฯ และปริมณฑล</p>
+                </div>
+                <div class="delivery-card glass-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>เวลาทำการ</h4>
+                    <p>ทุกวัน 10:00 - 21:00 น.</p>
+                </div>
+                <div class="delivery-card glass-card">
+                    <i class="fas fa-motorcycle"></i>
+                    <h4>ค่าจัดส่ง</h4>
+                    <p>เริ่มต้น 0 บาท* (ขึ้นอยู่กับระยะทาง)</p>
+                </div>
+                <div class="delivery-card glass-card">
+                    <i class="fas fa-box"></i>
+                    <h4>บรรจุภัณฑ์</h4>
+                    <p>กล่องเวทมนตร์ เก็บความเย็น ไม่รั่วซึม</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Footer / Final CTA -->
+    <footer class="footer content-padding">
+        <div class="container text-center">
+            <h2 class="main-headline">อย่ารอให้ "ความหิว" ครอบงำ</h2>
+            <p>สั่งซื้อตอนนี้ รับฟรี! คาถาเรียกทรัพย์มหาเฮง ติดข้างกล่องทุกออเดอร์</p>
+            <a href="#menu" class="cta-button" style="margin-top:20px; display:inline-block;">สั่งเลย! 🛒</a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Yum Yai Tue. All Rights Reserved. Crafted with Magic 🔮</p>
+        </div>
+    </footer>
+
+    <!-- ===== Checkout Modal ===== -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="modal glass-card">
+            <button class="close-modal-x" onclick="closeModal()">&times;</button>
+
+            <!-- Step 1: Cart Items -->
+            <div class="checkout-step" id="step1">
+                <h3>🧙‍♀️ ตะกร้าเวทมนตร์ของคุณ</h3>
+                <div id="cartItems"></div>
+                <div class="modal-total">
+                    รวมทั้งหมด: <strong id="cartTotal">0.-</strong>
+                </div>
+                <button class="cta-button full-width" onclick="goToStep(2)">ดำเนินการสั่งซื้อ →</button>
+            </div>
+
+            <!-- Step 2: Customer Info -->
+            <div class="checkout-step hidden" id="step2">
+                <h3>📋 ข้อมูลจัดส่ง</h3>
+                <div class="form-group">
+                    <label>ชื่อ-นามสกุล</label>
+                    <input type="text" id="custName" placeholder="กรุณากรอกชื่อ-นามสกุล" required>
+                </div>
+                <div class="form-group">
+                    <label>เบอร์โทรศัพท์</label>
+                    <input type="tel" id="custPhone" placeholder="0xx-xxx-xxxx" required>
+                </div>
+                <div class="form-group">
+                    <label>เขต</label>
+                    <select id="district" onchange="updateSubdistricts()">
+                        <option value="">-- เลือกเขต --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>แขวง</label>
+                    <select id="subdistrict">
+                        <option value="">-- เลือกแขวง --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>รายละเอียดที่อยู่เพิ่มเติม</label>
+                    <input type="text" id="custAddress" placeholder="บ้านเลขที่ ซอย ถนน คอนโด ห้อง ฯลฯ">
+                </div>
+                <div class="form-nav">
+                    <button class="btn-secondary" onclick="goToStep(1)">← ย้อนกลับ</button>
+                    <button class="cta-button" onclick="goToStep(3)">ไปหน้าชำระเงิน →</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Payment -->
+            <div class="checkout-step hidden" id="step3">
+                <h3>💳 ชำระเงิน</h3>
+                <div class="modal-total" style="margin-bottom:20px;">
+                    ยอดชำระทั้งหมด: <strong id="cartTotal2">0.-</strong>
+                </div>
+
+                <div class="payment-tabs">
+                    <button class="pay-tab active" onclick="switchPayTab('qr', this)">📱 สแกน QR Code</button>
+                    <button class="pay-tab" onclick="switchPayTab('cod', this)">🚚 เก็บเงินปลายทาง</button>
+                </div>
+
+                <div id="payQR" class="pay-content">
+                    <div class="qr-payment-box">
+                        <img src="../QR_CODE.JPG" alt="QR Code PromptPay" class="qr-image" id="qrImage">
+                        <div class="qr-info">
+                            <p><strong>PromptPay</strong></p>
+                            <p>ชื่อ: น.ส. อริยา รวีวงค์ไพบูรณ์</p>
+                            <p>บัญชี: xxx-x-x5525-x</p>
+                            <p style="font-size:0.8rem; opacity:0.6;">รับเงินได้จากทุกธนาคาร</p>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top:15px;">
+                        <label>แนบสลิปโอนเงิน (ไม่บังคับ)</label>
+                        <input type="file" id="slipUpload" accept="image/*" class="file-input">
+                    </div>
+                </div>
+
+                <div id="payCOD" class="pay-content hidden">
+                    <div class="cod-box">
+                        <i class="fas fa-truck" style="font-size:3rem; color:var(--gold); margin-bottom:15px;"></i>
+                        <h4>เก็บเงินปลายทาง (COD)</h4>
+                        <p>ชำระเงินสดเมื่อได้รับสินค้า<br>ค่าบริการเพิ่มเติม <strong>+20.-</strong></p>
+                    </div>
+                </div>
+
+                <div class="form-nav">
+                    <button class="btn-secondary" onclick="goToStep(2)">← ย้อนกลับ</button>
+                    <button class="cta-button" onclick="confirmOrder()">✨ ยืนยันคำสั่งซื้อ</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Order Confirmed -->
+            <div class="checkout-step hidden" id="step4">
+                <div class="success-box">
+                    <div class="success-icon">🎉</div>
+                    <h3>สั่งซื้อสำเร็จ!</h3>
+                    <p>มนตราถูกร่ายเรียบร้อยแล้ว กำลังเตรียมจัดส่งให้คุณ</p>
+                    <div class="order-summary" id="orderSummary"></div>
+                    <button class="cta-button" onclick="resetOrder()">สั่งอีกครั้ง 🔮</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
